@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+    body {
+      font-family: 'Playfair Display', serif, 'Poppins', sans-serif;
+      background-color: #b4caf4;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 999;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #f9f943;
+    }
+
+    .header {
+      margin-top: 70px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #020000;
+    }
+
+    .circular-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: right;
+      margin: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      margin: 15px 0;
+      background-color: #92bcf6;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #f8f8f8;
+      transform: translateY(-10px);
+      color: #000;
+    }
+
+    .card h2 {
+      text-align: center;
+    }
+
+    .card p {
+      text-align: left;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .contact {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin: 10px 0;
+    }
+
+    .contact .btn {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#hobbies">Hobbies</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="https://i.pinimg.com/736x/f2/0a/d4/f20ad477663063af3acc06d87c23b394.jpg" alt="Aarrnave" class="circular-image">
+    <h1>Welcome to My Portfolio</h1>
+    <h1>I am Aarrnave Sirigineedi.</h1>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+
+    <div class="card" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate about web development with a love for creating beautiful and functional websites.<br>
+        I am a patient learner and persistent in my job.
+      </p>
+      <a href="aboutme.html" class="btn">View Biodata</a>
+    </div>
+
+    <div class="card" id="education">
+      <h2>Education</h2>
+      <p>I am pursuing my studies in the field of Computer Science and Engineering with a strong foundation in web development and programming.</p>
+      </p>
+      <a href="Education.html" class="btn">View Education</a>
+    </div>
+
+    <div class="card" id="projects">
+      <h2>My Projects</h2>
+      <p>To view my projects, click below:</p>
+      <a href="projects.html" class="btn">View Projects</a>
+    </div>
+
+    <div class="card" id="certificates">
+      <h2>My Certificates</h2>
+      <p>To view my certificates, click below:</p>
+      <a href="certificates.html" class="btn">View Certificates</a>
+    </div>
+
+    <div class="card" id="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <p>To view my likes and hobbies, click below:</p>
+      <a href="hobbies.html" class="btn">View Hobbies</a>
+    </div>
+
+    <div class="contact">
+      <h1>Contact Me</h1>
+      <p>Get in contact with me!</p>
+      <h3>Phone: +91 7842451127</h3>
+      <h3>Gmail: aarrnavesirigineedi@gmail.com</h3>
+      <h3>
+        <a href="https://www.linkedin.com/in/aarrnave-sirigineedi-0b1b1a1b4/" class="btn">LinkedIn</a>
+        <a href="https://www.instagram.com/lets.infinity?igsh=MWFsMmF2dXdxdHByMg==" class="btn">Instagram</a>
+      </h3>
+    </div>
+
+  </div>
+</body>
+</html>
